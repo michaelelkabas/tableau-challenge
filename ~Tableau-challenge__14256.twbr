@@ -1,0 +1,2015 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='combined_citibike_data_cleaned' inline='true' name='federated.12lui610sx7vf911l7vxi01on0nj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='combined_citibike_data_cleaned' name='textscan.1upc4hv0t9baql1d65yx30j2yogl'>
+            <connection class='textscan' directory='C:/Users/melkabas/Documents/UTOR-VIRT-DATA-PT-02-2024-U-LOLC/tableau-challenge' filename='combined_citibike_data_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1upc4hv0t9baql1d65yx30j2yogl' name='combined_citibike_data_cleaned.csv' table='[combined_citibike_data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='real' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1upc4hv0t9baql1d65yx30j2yogl' name='combined_citibike_data_cleaned.csv' table='[combined_citibike_data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='tripduration' ordinal='0' />
+            <column datatype='datetime' name='starttime' ordinal='1' />
+            <column datatype='datetime' name='stoptime' ordinal='2' />
+            <column datatype='integer' name='start station id' ordinal='3' />
+            <column datatype='string' name='start station name' ordinal='4' />
+            <column datatype='real' name='start station latitude' ordinal='5' />
+            <column datatype='real' name='start station longitude' ordinal='6' />
+            <column datatype='integer' name='end station id' ordinal='7' />
+            <column datatype='string' name='end station name' ordinal='8' />
+            <column datatype='real' name='end station latitude' ordinal='9' />
+            <column datatype='real' name='end station longitude' ordinal='10' />
+            <column datatype='integer' name='bikeid' ordinal='11' />
+            <column datatype='string' name='usertype' ordinal='12' />
+            <column datatype='real' name='birth year' ordinal='13' />
+            <column datatype='integer' name='gender' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tripduration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tripduration]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>tripduration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>starttime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[starttime]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>starttime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stoptime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[stoptime]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>stoptime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start station id]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>start station id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start station name]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>start station name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station latitude]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>start station latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start station longitude]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>start station longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end station id]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>end station id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end station name]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>end station name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station latitude]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>end station latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end station longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end station longitude]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>end station longitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth year]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>birth year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[combined_citibike_data_cleaned.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='In Data Range' datatype='string' name='[Calculation_1003176853478887425]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF DATE([starttime]) &gt;= DATE(&apos;2013-10-01&apos;) AND DATE([starttime]) &lt;= DATE(&apos;2013-12-31&apos;) THEN &quot;In Range&quot; ELSE &quot;Out of Range&quot; END' />
+      </column>
+      <column caption='Hour of Day' datatype='integer' name='[Calculation_1003176853489491970]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEPART(&apos;hour&apos;, [starttime])' />
+      </column>
+      <column caption='Age' datatype='integer' datatype-customized='true' name='[Calculation_1003176853555539977]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(2013 - [birth year])' />
+      </column>
+      <column caption='Age group' datatype='string' datatype-customized='true' name='[Calculation_1003176853555732490]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1003176853555539977] &lt; 20 THEN &quot;Under 20&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 20 AND [Calculation_1003176853555539977] &lt; 30 THEN &quot;20-29&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 30 AND [Calculation_1003176853555539977] &lt; 40 THEN &quot;30-39&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 40 AND [Calculation_1003176853555539977] &lt; 50 THEN &quot;40-49&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 50 AND [Calculation_1003176853555539977] &lt; 60 THEN &quot;50-59&quot;&#13;&#10;ELSE &quot;60+&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Start Lat Radian' datatype='real' name='[Calculation_1003176854208286731]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([start station latitude])' />
+      </column>
+      <column caption='Start Long Radian' datatype='real' name='[Calculation_1003176854208970764]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([start station longitude])' />
+      </column>
+      <column caption='End Lat Radian' datatype='real' name='[Calculation_1003176854209187853]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([end station latitude])' />
+      </column>
+      <column caption='End Long Radian' datatype='real' name='[Calculation_1003176854209282062]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RADIANS([end station longitude])' />
+      </column>
+      <column caption='Haversine Distance' datatype='real' name='[Calculation_1003176854210072592]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='2 * 3959 * ASIN(SQRT(POWER(SIN(([Calculation_1003176854209187853] - [Calculation_1003176854208286731]) / 2), 2) +&#13;&#10;    COS([Calculation_1003176854208286731]) * COS([Calculation_1003176854209187853]) *&#13;&#10;    POWER(SIN(([Calculation_1003176854209282062] - [Calculation_1003176854208970764]) / 2), 2)))' />
+      </column>
+      <column caption='Is Fall' datatype='string' datatype-customized='true' name='[Calculation_1689694321477042198]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF MONTH([starttime]) IN (10, 11) THEN &quot;Fall&quot; ELSE &quot;Other&quot; END' />
+      </column>
+      <column caption='Is Winter' datatype='string' name='[Calculation_1689694321478230039]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF MONTH([starttime]) = 12 THEN &quot;Winter&quot; ELSE &quot;Other&quot; END' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Tripduration (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[tripduration]' peg='0' size='37714' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='combined_citibike_data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='real' name='[birth year]' role='dimension' type='quantitative' />
+      <column caption='End Station Id' datatype='integer' name='[end station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+      <column caption='Start Station Id' datatype='integer' name='[start station id]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+      <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
+      <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1003176853489491970]' derivation='Sum' name='[sum:Calculation_1003176853489491970:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/melkabas/AppData/Local/Temp/TableauTemp/#TableauTemp_12k00jj1uy9b6w11p8z881ke7mxr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/04/2024 01:12:39 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tripduration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tripduration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tripduration</remote-alias>
+              <ordinal>0</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7723</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>starttime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[starttime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>starttime</remote-alias>
+              <ordinal>1</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1835016</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stoptime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[stoptime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stoptime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1856570</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start station longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[end station id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end station name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end station longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end station longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end station longitude</remote-alias>
+              <ordinal>10</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>11</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28493</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>12</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[birth year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>combined_citibike_data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[sum:Calculation_1003176853489491970:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>165968</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>500024</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>778734</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>488896</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1758352</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2247248</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21831372</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3704</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>11372</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>15944</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>261855</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>844426</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>1211139</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>198470</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>612766</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>873980</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>12070</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>12240</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>52185</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>356640</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>1214024</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>1735100</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2641</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>12068</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>504545</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1928785</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2433330</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>320931</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>1052793</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>1448993</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>40115</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>52302</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>251868</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>263864</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>949284</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>1286952</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>277452</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>1004964</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>1309784</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>355642</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>1128062</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>1569666</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>403710</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>1378460</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>1393395</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>1797105</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>215468</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>675510</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>975139</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>126826</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>199566</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>626850</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2799</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>9427</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>12591</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>670038</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2644418</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3314456</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>281988</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>1045920</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>1330245</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>229526</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>759671</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>1073952</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3506</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>9792</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>14878</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>670410</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2658006</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3328416</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='tripduration' />
+        <field-sort-custom-order field='starttime' />
+        <field-sort-custom-order field='Calculation_1689694321478230039' />
+        <field-sort-custom-order field='Calculation_1689694321477042198' />
+        <field-sort-custom-order field='Calculation_1689694321472495632' />
+        <field-sort-custom-order field='Calculation_1689694321472126991' />
+        <field-sort-custom-order field='Calculation_1689694321471410188' />
+        <field-sort-custom-order field='stoptime' />
+        <field-sort-custom-order field='Calculation_1689694321471164427' />
+        <field-sort-custom-order field='start station id' />
+        <field-sort-custom-order field='start station name' />
+        <field-sort-custom-order field='start station latitude' />
+        <field-sort-custom-order field='start station longitude' />
+        <field-sort-custom-order field='end station id' />
+        <field-sort-custom-order field='end station name' />
+        <field-sort-custom-order field='end station latitude' />
+        <field-sort-custom-order field='end station longitude' />
+        <field-sort-custom-order field='bikeid' />
+        <field-sort-custom-order field='usertype' />
+        <field-sort-custom-order field='birth year' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='combined_citibike_data_cleaned.csv' id='combined_citibike_data_cleaned.csv_CA04A1F863034D71B5327AC940A575CA'>
+            <properties context=''>
+              <relation connection='textscan.1upc4hv0t9baql1d65yx30j2yogl' name='combined_citibike_data_cleaned.csv' table='[combined_citibike_data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='tripduration' ordinal='0' />
+                  <column datatype='datetime' name='starttime' ordinal='1' />
+                  <column datatype='datetime' name='stoptime' ordinal='2' />
+                  <column datatype='integer' name='start station id' ordinal='3' />
+                  <column datatype='string' name='start station name' ordinal='4' />
+                  <column datatype='real' name='start station latitude' ordinal='5' />
+                  <column datatype='real' name='start station longitude' ordinal='6' />
+                  <column datatype='integer' name='end station id' ordinal='7' />
+                  <column datatype='string' name='end station name' ordinal='8' />
+                  <column datatype='real' name='end station latitude' ordinal='9' />
+                  <column datatype='real' name='end station longitude' ordinal='10' />
+                  <column datatype='integer' name='bikeid' ordinal='11' />
+                  <column datatype='string' name='usertype' ordinal='12' />
+                  <column datatype='real' name='birth year' ordinal='13' />
+                  <column datatype='integer' name='gender' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='AnalyzeFall'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Analyze the peak hours when bikes are used during the summer and winter months</run>
+            <run>&#10;&#10;&lt;AnalyzeWinterSummer&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column caption='Hour of Day' datatype='integer' name='[Calculation_1003176853489491970]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;, [starttime])' />
+            </column>
+            <column caption='Is Fall' datatype='string' datatype-customized='true' name='[Calculation_1689694321477042198]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([starttime]) IN (10, 11) THEN &quot;Fall&quot; ELSE &quot;Other&quot; END' />
+            </column>
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1689694321477042198]' derivation='None' name='[none:Calculation_1689694321477042198:nk]' pivot='key' type='nominal' />
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1003176853489491970]' derivation='Sum' name='[sum:Calculation_1003176853489491970:ok]' pivot='key' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321477042198:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1689694321477042198:nk]' member='&quot;Fall&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' direction='ASC' />
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321477042198:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[hr:starttime:ok]</cols>
+      </table>
+      <simple-id uuid='{9F938389-EF01-467F-B82C-D2AF02B2A3BA}' />
+    </worksheet>
+    <worksheet name='AnalyzeWinter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Analyze the peak hours when bikes are used during the summer and winter months</run>
+            <run>&#10;&#10;&lt;AnalyzeWinterSummer&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column caption='Hour of Day' datatype='integer' name='[Calculation_1003176853489491970]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;hour&apos;, [starttime])' />
+            </column>
+            <column caption='Is Winter' datatype='string' name='[Calculation_1689694321478230039]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([starttime]) = 12 THEN &quot;Winter&quot; ELSE &quot;Other&quot; END' />
+            </column>
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Hour' name='[hr:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1689694321478230039]' derivation='None' name='[none:Calculation_1689694321478230039:nk]' pivot='key' type='nominal' />
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1003176853489491970]' derivation='Sum' name='[sum:Calculation_1003176853489491970:ok]' pivot='key' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321478230039:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1689694321478230039:nk]' member='&quot;Winter&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' direction='ASC' />
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321478230039:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[hr:starttime:ok]</cols>
+      </table>
+      <simple-id uuid='{B11CC23C-017E-4B5F-8459-6CE6E9BAAC41}' />
+    </worksheet>
+    <worksheet name='AverageTripUserType'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19'>How does the average trip duration change by the type of user? </run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[tripduration]' derivation='Avg' name='[avg:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]'>
+            <groupfilter from='10' function='range' level='[mn:starttime:ok]' to='12' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:usertype:nk]' />
+              <groupfilter function='member' level='[none:usertype:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]</column>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' value='153' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]</cols>
+      </table>
+      <simple-id uuid='{65E2E2F5-5318-40E0-9598-95963B9C1D27}' />
+    </worksheet>
+    <worksheet name='AvgDistance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>What is the average distance in miles for a bike trip? </run>
+            <run lmargin='1110' rmargin='1110'>Æ&#10;</run>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>What is the trip duration and month/season ?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column caption='Start Lat Radian' datatype='real' name='[Calculation_1003176854208286731]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([start station latitude])' />
+            </column>
+            <column caption='Start Long Radian' datatype='real' name='[Calculation_1003176854208970764]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([start station longitude])' />
+            </column>
+            <column caption='End Lat Radian' datatype='real' name='[Calculation_1003176854209187853]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([end station latitude])' />
+            </column>
+            <column caption='End Long Radian' datatype='real' name='[Calculation_1003176854209282062]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RADIANS([end station longitude])' />
+            </column>
+            <column caption='Haversine Distance' datatype='real' name='[Calculation_1003176854210072592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='2 * 3959 * ASIN(SQRT(POWER(SIN(([Calculation_1003176854209187853] - [Calculation_1003176854208286731]) / 2), 2) +&#13;&#10;    COS([Calculation_1003176854208286731]) * COS([Calculation_1003176854209187853]) *&#13;&#10;    POWER(SIN(([Calculation_1003176854209282062] - [Calculation_1003176854208970764]) / 2), 2)))' />
+            </column>
+            <column caption='Is Fall' datatype='string' datatype-customized='true' name='[Calculation_1689694321477042198]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([starttime]) IN (10, 11) THEN &quot;Fall&quot; ELSE &quot;Other&quot; END' />
+            </column>
+            <column caption='Is Winter' datatype='string' name='[Calculation_1689694321478230039]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([starttime]) = 12 THEN &quot;Winter&quot; ELSE &quot;Other&quot; END' />
+            </column>
+            <column-instance column='[Calculation_1003176854210072592]' derivation='Avg' name='[avg:Calculation_1003176854210072592:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tripduration]' derivation='Avg' name='[avg:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Day' name='[dy:starttime:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1689694321477042198]' derivation='None' name='[none:Calculation_1689694321477042198:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1689694321478230039]' derivation='None' name='[none:Calculation_1689694321478230039:nk]' pivot='key' type='nominal' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1003176854209187853]' derivation='Sum' name='[sum:Calculation_1003176854209187853:qk]' pivot='key' type='quantitative' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12lui610sx7vf911l7vxi01on0nj].[avg:Calculation_1003176854210072592:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176854209187853:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.12lui610sx7vf911l7vxi01on0nj].[:Measure Names]' value='158' />
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[dy:starttime:ok]' value='98' />
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321478230039:nk]' />
+              <lod column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321477042198:nk]' />
+              <lod column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321478230039:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='295' />
+                <format attr='maxheight' value='295' />
+                <format attr='minwidth' value='333' />
+                <format attr='maxwidth' value='333' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:Calculation_1003176854210072592:qk]</rows>
+        <cols>([federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok] * [federated.12lui610sx7vf911l7vxi01on0nj].[avg:tripduration:qk])</cols>
+      </table>
+      <simple-id uuid='{B2027974-104D-4C02-8931-D33CC5AC9E5B}' />
+    </worksheet>
+    <worksheet name='BikeIDRepair'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>Which bikes (by ID) are most likely due for repair or inspection in the timespan?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column caption='&quot;Trip Duration&quot;' datatype='string' name='[Calculation_1003176854237175830]' role='dimension' type='nominal' user:unnamed='BikeIDRepair'>
+              <calculation class='tableau' formula='&quot;Trip Duration&quot;' />
+            </column>
+            <column caption='&quot;Sum Trip Duration&quot;' datatype='string' name='[Calculation_1003176854237270040]' role='dimension' type='nominal' user:unnamed='BikeIDRepair'>
+              <calculation class='tableau' formula='&quot;Sum Trip Duration&quot;' />
+            </column>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1003176854237175830]' derivation='None' name='[none:Calculation_1003176854237175830:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1003176854237270040]' derivation='None' name='[none:Calculation_1003176854237270040:nk]' pivot='key' type='nominal' />
+            <column-instance column='[bikeid]' derivation='Sum' name='[sum:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='776' />
+                <format attr='maxwidth' value='776' />
+                <format attr='minheight' value='598' />
+                <format attr='maxheight' value='598' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='776' />
+                <format attr='maxwidth' value='776' />
+                <format attr='minheight' value='598' />
+                <format attr='maxheight' value='598' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[sum:bikeid:qk]</rows>
+        <cols>([federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1003176854237175830:nk] / [federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1003176854237270040:nk])</cols>
+      </table>
+      <simple-id uuid='{B6680C12-2343-4778-B9B3-A13D86405768}' />
+    </worksheet>
+    <worksheet name='Bottom10StationsEnd'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19'>what are the bottom 10 stations in the city for ending a journey</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[end station latitude]' derivation='Avg' name='[avg:end station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[end station longitude]' derivation='Avg' name='[avg:end station longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='End Station Latitude' datatype='real' name='[end station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='End Station Longitude' datatype='real' name='[end station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+            <column-instance column='[end station name]' derivation='None' name='[none:end station name:nk]' pivot='key' type='nominal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([tripduration])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:end station name:nk]' />
+                  <groupfilter function='member' level='[none:end station name:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]</column>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12lui610sx7vf911l7vxi01on0nj].[avg:end station longitude:qk]' field-type='quantitative' max='-8227393.9418489467' min='-8243110.8285993449' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.12lui610sx7vf911l7vxi01on0nj].[avg:end station latitude:qk]' field-type='quantitative' max='4971334.5449355217' min='4962805.8037534179' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' />
+              <lod column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:end station latitude:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:end station longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{30121E90-5D08-4DE8-94CA-75B09122B12C}' />
+    </worksheet>
+    <worksheet name='Bottom10StationsStart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19'>what are the bottom 10 stations in the city for starting a journey</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[start station latitude]' derivation='Avg' name='[avg:start station latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station longitude]' derivation='Avg' name='[avg:start station longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station name]' derivation='None' name='[none:start station name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Avg' caption='Start Station Latitude' datatype='real' name='[start station latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Start Station Longitude' datatype='real' name='[start station longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[start station name]' role='dimension' type='nominal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([tripduration])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:start station name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12lui610sx7vf911l7vxi01on0nj].[avg:start station longitude:qk]' field-type='quantitative' max='-8226102.2228569183' min='-8241298.6713040657' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.12lui610sx7vf911l7vxi01on0nj].[avg:start station latitude:qk]' field-type='quantitative' max='4971882.5726782084' min='4963636.2464336287' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' />
+              <lod column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:start station latitude:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:start station longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A441643C-61D0-45FB-862D-46364CEACF32}' />
+    </worksheet>
+    <worksheet name='PercentRidership'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>By what percentage has total ridership grown?</run>
+            <run>&#10;&#10;&#10;&lt;PercentRidership&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tripduration]' derivation='Count' name='[pcdf:cnt:tripduration:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.12lui610sx7vf911l7vxi01on0nj].[pcdf:cnt:tripduration:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[pcdf:cnt:tripduration:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]' value='341' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.12lui610sx7vf911l7vxi01on0nj].[pcdf:cnt:tripduration:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[pcdf:cnt:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]</cols>
+      </table>
+      <simple-id uuid='{5694A112-7CC0-423A-B8A6-9F3C155B2C15}' />
+    </worksheet>
+    <worksheet name='PorportionsShortTerm'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>How have the proportions of short-term customers and annual subscribers changed?</run>
+            <run lmargin='1110' rmargin='1110'>&lt;PorportionsShortTerm&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tripduration]' derivation='Count' name='[pcto:cnt:tripduration:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field' type='PctTotal'>
+                <order field='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]' />
+                <order field='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' />
+              </table-calc>
+            </column-instance>
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]'>
+            <groupfilter function='level-members' level='[none:usertype:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]' value='151' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[pcto:cnt:tripduration:qk:2]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]</cols>
+      </table>
+      <simple-id uuid='{006997DF-9917-46B3-9D58-E81DD54B80A3}' />
+    </worksheet>
+    <worksheet name='Top10StationsEnd'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Top 10 stations in the city for ending a journey </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='End Station Name' datatype='string' name='[end station name]' role='dimension' type='nominal' />
+            <column-instance column='[end station name]' derivation='None' name='[none:end station name:nk]' pivot='key' type='nominal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([tripduration])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:end station name:nk]' />
+                  <groupfilter function='member' level='[none:end station name:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;E 17 St &amp; Broadway&quot;</bucket>
+              <bucket>&quot;8 Ave &amp; W 31 St&quot;</bucket>
+              <bucket>&quot;Lafayette St &amp; E 8 St&quot;</bucket>
+              <bucket>&quot;W 21 St &amp; 6 Ave&quot;</bucket>
+              <bucket>&quot;Pershing Square N&quot;</bucket>
+              <bucket>&quot;Broadway &amp; E 14 St&quot;</bucket>
+              <bucket>&quot;W 20 St &amp; 11 Ave&quot;</bucket>
+              <bucket>&quot;University Pl &amp; E 14 St&quot;</bucket>
+              <bucket>&quot;Broadway &amp; E 22 St&quot;</bucket>
+              <bucket>&quot;Greenwich Ave &amp; 8 Ave&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]' value='46' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1150' />
+                <format attr='maxwidth' value='1150' />
+                <format attr='minheight' value='200' />
+                <format attr='maxheight' value='200' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[none:end station name:nk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</cols>
+      </table>
+      <simple-id uuid='{23C6799D-12FF-43F6-A391-A3C2E006DB83}' />
+    </worksheet>
+    <worksheet name='Top10StationsStart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Top 10 stations in the city for starting a journey </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start station name]' derivation='None' name='[none:start station name:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[start station name]' role='dimension' type='nominal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([tripduration])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:start station name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]' value='48' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1199' />
+                <format attr='maxwidth' value='1199' />
+                <format attr='minheight' value='200' />
+                <format attr='maxheight' value='200' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[none:start station name:nk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</cols>
+      </table>
+      <simple-id uuid='{859B011C-EB85-4287-8EA1-8A92D6A7DC2F}' />
+    </worksheet>
+    <worksheet name='TripCount'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#2b2b2b' fontname='Roboto' fontsize='19' lmargin='1110' rmargin='1110'>How many trips have been recorded in total during the chosen period?</run>
+            <run lmargin='1110' rmargin='1110'>Æ&#10;&#10;</run>
+            <run>&#10;&lt;TripCount&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column-instance column='[tripduration]' derivation='Count' name='[cnt:tripduration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[starttime]' derivation='Month' name='[mn:starttime:ok]' pivot='key' type='ordinal' />
+            <column caption='Starttime' datatype='datetime' datatype-customized='true' name='[starttime]' role='dimension' type='ordinal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]' value='416' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[mn:starttime:ok]</cols>
+      </table>
+      <simple-id uuid='{E8F2BD19-554E-4290-835F-D0C9E0637B8B}' />
+    </worksheet>
+    <worksheet name='TripDurationAge'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Trip Duration by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_citibike_data_cleaned' name='federated.12lui610sx7vf911l7vxi01on0nj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12lui610sx7vf911l7vxi01on0nj'>
+            <column caption='Age' datatype='integer' datatype-customized='true' name='[Calculation_1003176853555539977]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(2013 - [birth year])' />
+            </column>
+            <column caption='Age group' datatype='string' datatype-customized='true' name='[Calculation_1003176853555732490]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1003176853555539977] &lt; 20 THEN &quot;Under 20&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 20 AND [Calculation_1003176853555539977] &lt; 30 THEN &quot;20-29&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 30 AND [Calculation_1003176853555539977] &lt; 40 THEN &quot;30-39&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 40 AND [Calculation_1003176853555539977] &lt; 50 THEN &quot;40-49&quot;&#13;&#10;ELSEIF [Calculation_1003176853555539977] &gt;= 50 AND [Calculation_1003176853555539977] &lt; 60 THEN &quot;50-59&quot;&#13;&#10;ELSE &quot;60+&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[tripduration]' derivation='Avg' name='[avg:tripduration:qk]' pivot='key' type='quantitative' />
+            <column caption='Birth Year' datatype='real' name='[birth year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_1003176853555732490]' derivation='None' name='[none:Calculation_1003176853555732490:nk]' pivot='key' type='nominal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1003176853555732490:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.12lui610sx7vf911l7vxi01on0nj].[avg:tripduration:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1003176853555732490:nk]' value='133' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12lui610sx7vf911l7vxi01on0nj].[avg:tripduration:qk]</rows>
+        <cols>[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1003176853555732490:nk]</cols>
+        <show-full-range>
+          <column>[federated.12lui610sx7vf911l7vxi01on0nj].[Tripduration (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EAC0792C-828F-4530-BFA0-F46D43547E62}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='TripCount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0F83D25-8BDF-47F1-8660-02921CE3337F}' />
+    </window>
+    <window class='worksheet' name='PercentRidership'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46C6597A-1403-4776-A6ED-44CD71C8917B}' />
+    </window>
+    <window class='worksheet' name='PorportionsShortTerm'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D37F07EF-9AE9-4628-8D2E-F5530FC9DB6F}' />
+    </window>
+    <window class='worksheet' name='AnalyzeFall'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39C6A3CF-3361-4414-8559-B4114D7EBD1C}' />
+    </window>
+    <window class='worksheet' name='AnalyzeWinter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12lui610sx7vf911l7vxi01on0nj].[sum:Calculation_1003176853489491970:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DACA2D3-EA01-4DCF-8048-411F4BFF1221}' />
+    </window>
+    <window class='worksheet' name='Top10StationsStart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A67E559-6DD1-4EAE-B342-7D109E8DB01D}' />
+    </window>
+    <window class='worksheet' name='Top10StationsEnd'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EDDD2252-E7CB-494D-A1ED-C86C5ED99F93}' />
+    </window>
+    <window class='worksheet' name='Bottom10StationsStart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{6C2BFFE0-BFF9-414B-9226-3D2953677C53}' />
+    </window>
+    <window class='worksheet' name='Bottom10StationsEnd'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.12lui610sx7vf911l7vxi01on0nj].[cnt:tripduration:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A3EC0AE9-57F1-4297-B81A-C89587191B66}' />
+    </window>
+    <window class='worksheet' name='AverageTripUserType'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FD3EC711-470F-450C-8C8A-F50A289E6D3A}' />
+    </window>
+    <window class='worksheet' name='TripDurationAge'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.12lui610sx7vf911l7vxi01on0nj].[none:usertype:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49973504-6EBE-40D7-A5A8-4750F9867050}' />
+    </window>
+    <window class='worksheet' name='AvgDistance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12lui610sx7vf911l7vxi01on0nj].[none:Calculation_1689694321478230039:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B40C449-66FA-40D8-873B-6E9932137CDD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='BikeIDRepair'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4604D878-671A-4BB0-B371-095A8DA97C59}' />
+    </window>
+  </windows>
+</workbook>
